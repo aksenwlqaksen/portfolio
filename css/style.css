@@ -1,0 +1,2693 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff") format("woff");
+}
+.lottemartdream * {
+  font-family: "LotteMartDream", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+#footer {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 140px;
+  background-color: rgb(65, 65, 65);
+}
+#footer .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+#footer .inner .footer_menu ul {
+  float: right;
+  margin-right: 210px;
+}
+#footer .inner .footer_menu ul li {
+  float: left;
+  padding-right: 30px;
+  display: flex;
+}
+#footer .inner .footer_menu ul li a {
+  font: normal 17px/1 "LotteMartDream";
+  color: #fff;
+}
+#footer .inner .footer_wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#footer .inner .footer_wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner .footer_wrap h2 {
+  margin: 30px 100px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#footer .inner .footer_wrap address {
+  text-align: right;
+  position: relative;
+  margin: -100px 250px 50px;
+  display: block;
+  float: right;
+}
+#footer .inner .footer_wrap address > li span {
+  padding: 0px 0px 5px 20px;
+  display: inline-block;
+  font: normal 13px/1 "LotteMartDream";
+  vertical-align: top;
+  color: #d6d6d6;
+  text-align: left;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(246, 222, 197);
+}
+#header.on {
+  width: 100%;
+  top: 0px;
+  position: fixed;
+}
+#header .inner {
+  width: 1180px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+#header .inner h1 {
+  padding: 14px;
+  top: 30px;
+  position: absolute;
+  left: 0px;
+}
+#header .inner .menuWeb #gnb {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  display: flex;
+  float: right;
+}
+#header .inner .menuWeb #gnb li {
+  display: block;
+  padding: 14px;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+}
+#header .inner .menuWeb #gnb li a {
+  font: bold 20px/1 "LotteMartDream";
+  color: #000;
+}
+#header .inner .menuWeb #gnb li:hover {
+  padding: 14px;
+  width: 130px;
+  height: 50px;
+  background-color: rgb(238, 92, 55);
+  box-shadow: inset 3px 3px 7px rgb(110, 43, 26);
+}
+#header .inner .menuWeb #gnb li:hover a {
+  margin-top: 10px;
+  font: bold 20px/1 "LotteMartDream";
+  color: rgb(255, 255, 255);
+}
+#header .inner .menuWeb #gnb li:active {
+  box-shadow: inset 3px 3px 12px rgb(110, 43, 26);
+}
+#header .inner .menuWeb #gnb li .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #555;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  display: none;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+}
+#header .inner .menuWeb .until {
+  padding: 10px 70px 5px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  gap: 20px;
+  font: normal 15px "LotteMartDream";
+  color: #000;
+}
+#header .inner .menuWeb .until li a {
+  color: #333;
+}
+#header .inner .btnCall {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+#header .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  transition: 0.5s;
+  text-indent: -9999999px;
+}
+#header .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header .inner .menuMo {
+  width: 270px;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 10;
+  padding: 35px 30px;
+  transition: all 0.5s;
+  display: none;
+}
+#header .inner .menuMo.on {
+  left: 0px;
+}
+#header .inner .menuMo h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+#header .inner .menuMo h2 a {
+  font: bold 24px/1 "LotteMartDream";
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+#header .inner .menuMo h2 span {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  display: block;
+}
+#header .inner .menuMo ul li a {
+  display: block;
+  padding: 20px 0px;
+  text-align: center;
+  font: bold 14px/1 "LotteMartDream";
+  color: #888;
+  border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%;
+  }
+  #header .inner h1 {
+    padding: 14px;
+    top: 30px;
+    position: absolute;
+    left: 0px;
+  }
+  #header .inner .menuWeb {
+    display: none;
+  }
+  #header .inner .btnCall {
+    display: block;
+  }
+  #header .inner .menuMo {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* header 영역 없음 */
+}
+#find {
+  margin: 100px 0 100px 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../image/main/store/find.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#find .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#find .inner span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  color: #000;
+  font: bold 40px/1.5 "LotteMartDream";
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#find:hover {
+  filter: brightness(0.5);
+}
+#find:hover span {
+  border: 1px solid #000;
+  width: 200px;
+  border-radius: 50px;
+  font: bold 40px/1.5 "LotteMartDream";
+  color: #000;
+  display: block;
+}
+
+#guide {
+  margin: 100px 0 100px 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../image/main/store/guide.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#guide .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#guide .inner span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font: bold 40px/1.5 "LotteMartDream";
+  border: 1ps solid transparent;
+  box-sizing: border-box;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#guide:hover {
+  filter: brightness(0.7);
+}
+#guide:hover span {
+  border: 1px solid #fff;
+  width: 300px;
+  border-radius: 50px;
+  font: bold 40px/1.5 "LotteMartDream";
+  color: #fff;
+  display: block;
+}
+
+#menu {
+  font-family: "LotteMartDream";
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+#menu .inner {
+  width: 1180px;
+  height: 100%;
+  position: relative;
+  display: inline-flex;
+}
+#menu .inner article {
+  width: 1000px;
+  height: 400px;
+  margin: 50px auto;
+}
+#menu .inner article .pic {
+  width: 280px;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+#menu .inner article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all;
+}
+#menu .inner article:hover img {
+  filter: brightness(0.6);
+}
+#menu .inner article:hover .wrap {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+}
+#menu .inner article .wrap {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  margin-left: 8px;
+}
+#menu .inner article .wrap span {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+#order {
+  width: 1180px;
+  height: 200px;
+  margin: 0 auto;
+}
+#order .inner {
+  margin: 0 auto;
+  position: relative;
+}
+#order .inner .wrap {
+  width: 100%;
+}
+#order .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#order .inner .wrap .btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: solid #bdbdbd;
+  border-width: 1px 1px 1px 1px;
+}
+#order .inner .wrap .btn button {
+  border: solid #bdbdbd;
+  border-width: 0px 0px 0px 0px;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  color: #000;
+  font: normal 25px/1 "LotteMartDream";
+  display: block;
+  cursor: pointer;
+}
+#order .inner .wrap .btn #cuponOrder {
+  background-color: rgb(235, 235, 235);
+  box-shadow: inset 3px 3px 7px rgb(128, 128, 128);
+  font-size: 30px;
+}
+#order .inner .wrap .btn #cuponOrder:active {
+  border: none;
+  box-shadow: inset 3px 3px 12px rgb(75, 75, 75);
+}
+#order .inner .wrap .btn #packOrder {
+  background-color: rgb(238, 92, 55);
+  box-shadow: inset 0px 3px 7px rgb(110, 43, 26);
+  font-size: 30px;
+  color: #fff;
+}
+#order .inner .wrap .btn #packOrder:active {
+  border: none;
+  box-shadow: inset 3px 3px 20px rgb(110, 43, 26);
+}
+#order .inner .wrap .btn #deliverOrder {
+  background-color: rgb(253, 208, 125);
+  box-shadow: inset 0px 3px 7px rgb(128, 105, 63);
+  font-size: 30px;
+  color: rgb(114, 66, 18);
+}
+#order .inner .wrap .btn #deliverOrder:active {
+  border: none;
+  box-shadow: inset 3px 3px 12px rgb(114, 66, 18);
+}
+#order .inner .wrap .btn #groupOrder {
+  border-width: 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 3px 7px rgb(128, 128, 128);
+  font-size: 30px;
+}
+#order .inner .wrap .btn #groupOrder:active {
+  border: none;
+  box-shadow: inset 3px 3px 12px rgb(128, 128, 128);
+}
+
+#recipe {
+  font-family: "LotteMartDream";
+  width: 1000px;
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+#recipe .inner {
+  width: 100%;
+  margin-top: 80px;
+}
+#recipe .inner .recipe_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#recipe .inner .recipe_title h2 {
+  display: block;
+  margin-left: 100px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 26px;
+  color: #222;
+}
+#recipe .inner .recipe_title .btnMore {
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 100%;
+  font: normal 15px/2 "LotteMartDream";
+  color: #222;
+  border: 1px solid #a0a0a0;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+#recipe .inner .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#recipe .inner .wrap section {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  margin: 70px 30px;
+}
+#recipe .inner .wrap section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#recipe .inner .wrap section a article {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#recipe .inner .wrap section a article img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+#recipe .inner .wrap section a article h3 {
+  margin-bottom: 170px;
+  position: absolute;
+  font: normal 30px/1.5 "LotteMartDream";
+  color: #fff;
+  text-align: left;
+}
+#recipe .inner .wrap section a article span {
+  margin-bottom: -70px;
+  padding: 30px;
+  position: absolute;
+  font: normal 20px/1.5 "LotteMartDream";
+  color: #fff;
+  text-align: left;
+}
+#recipe .inner .wrap section a article.on {
+  display: flex;
+}
+#recipe .inner .wrap section a article:nth-of-type(1) {
+  height: 400px;
+}
+#recipe .inner .wrap section a article:nth-of-type(2) {
+  height: 400px;
+}
+#recipe .inner .wrap section a article:nth-of-type(3) {
+  height: 400px;
+}
+#recipe .inner .wrap nav {
+  width: 400px;
+  height: 100%;
+  align-items: flex-end;
+  margin: 70px 30px;
+}
+#recipe .inner .wrap nav ul {
+  width: 100%;
+}
+#recipe .inner .wrap nav ul li {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  margin-top: 3px;
+}
+#recipe .inner .wrap nav ul li a {
+  padding: 30px 30px 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font: normal 20px/1.5 "LotteMartDream";
+  color: #222;
+}
+#recipe .inner .wrap nav ul li:hover {
+  border: none;
+  box-shadow: inset 3px 3px 7px rgb(104, 94, 84);
+}
+#recipe .inner .wrap nav ul li:active {
+  border: none;
+  box-shadow: inset 3px 3px 12px rgb(104, 94, 84);
+}
+#recipe .inner .wrap nav ul li.on {
+  border: none;
+  background-color: rgb(238, 92, 55);
+  box-shadow: inset 3px 3px 7px rgb(110, 43, 26);
+}
+#recipe .inner .wrap nav ul li.on a {
+  font: bold 20px/1.5 "LotteMartDream";
+  color: rgb(255, 255, 255);
+}
+#recipe .inner .wrap nav ul:hover {
+  border: none;
+}
+
+#slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#slide .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#slide .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slide .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+#slide .swiper-wrapper .swiper-slide:nth-of-type(1) {
+  background-color: rgb(234, 77, 42);
+}
+#slide .swiper-wrapper .swiper-slide:nth-of-type(2) {
+  background-color: rgb(12, 48, 38);
+}
+#slide .swiper-wrapper .swiper-slide:nth-of-type(3) {
+  background-color: rgb(48, 49, 44);
+}
+#slide .swiper-wrapper .swiper-slide:nth-of-type(4) {
+  background-color: rgb(20, 20, 20);
+}
+
+#header_sub {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(246, 222, 197);
+}
+#header_sub.on {
+  width: 100%;
+  top: 0px;
+  position: fixed;
+}
+#header_sub .inner {
+  width: 1180px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+#header_sub .inner h1 {
+  padding: 14px;
+  top: 30px;
+  position: absolute;
+  left: 0px;
+}
+#header_sub .inner .menuWeb #gnb {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  display: flex;
+  float: right;
+}
+#header_sub .inner .menuWeb #gnb li {
+  display: block;
+  padding: 14px;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+}
+#header_sub .inner .menuWeb #gnb li a {
+  font: bold 20px/1 "IBM Plex Sans KR";
+  color: #000;
+}
+#header_sub .inner .menuWeb #gnb li:hover {
+  padding: 14px;
+  width: 130px;
+  height: 50px;
+  background-color: rgb(238, 92, 55);
+  box-shadow: inset 3px 3px 7px rgb(110, 43, 26);
+}
+#header_sub .inner .menuWeb #gnb li:hover a {
+  margin-top: 10px;
+  font: bold 20px/1 "IBM Plex Sans KR";
+  color: rgb(255, 255, 255);
+}
+#header_sub .inner .menuWeb #gnb li:active {
+  box-shadow: inset 3px 3px 12px rgb(110, 43, 26);
+}
+#header_sub .inner .menuWeb #gnb li.on {
+  background-color: rgb(253, 208, 125);
+  box-shadow: inset 0px 3px 7px rgb(128, 105, 63);
+}
+#header_sub .inner .menuWeb #gnb li.on a {
+  margin-top: 10px;
+  font: bold 20px/1 "IBM Plex Sans KR";
+  color: rgb(114, 66, 18);
+}
+#header_sub .inner .menuWeb #gnb li .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #555;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  display: none;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+}
+#header_sub .inner .menuWeb .until {
+  padding: 10px 70px 5px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  gap: 20px;
+  display: flex;
+  font: normal 15px "IBM Plex Sans KR";
+  color: #000;
+}
+#header_sub .inner .menuWeb .until li a {
+  color: #333;
+}
+#header_sub .inner .btnCall {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+#header_sub .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  transition: 0.5s;
+  text-indent: -9999999px;
+}
+#header_sub .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .inner .menuMo {
+  width: 270px;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 10;
+  padding: 35px 30px;
+  transition: all 0.5s;
+  display: none;
+}
+#header_sub .inner .menuMo.on {
+  left: 0px;
+}
+#header_sub .inner .menuMo h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+#header_sub .inner .menuMo h2 a {
+  font: bold 24px/1 "IBM Plex Sans KR";
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+#header_sub .inner .menuMo h2 span {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  display: block;
+}
+#header_sub .inner .menuMo ul li a {
+  display: block;
+  padding: 20px 0px;
+  text-align: center;
+  font: bold 14px/1 "IBM Plex Sans KR";
+  color: #888;
+  border-bottom: 1px solid #eee;
+}
+
+.content {
+  width: 100%;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content > .inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content > .inner .Title {
+  width: 100%;
+  height: 200px;
+}
+.content > .inner .Title h1 {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #000;
+  font: normal 50px/1 "IBM Plex Sans KR";
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .wrap {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 50vh;
+}
+.content .wrap .main_tab {
+  width: 1180px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.content .wrap .main_tab ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.content .wrap .main_tab ul li {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .wrap .main_tab ul li a {
+  color: #000;
+  font: 500 15px "IBM Plex Sans KR";
+}
+.content .wrap .main_tab ul li:hover a {
+  color: orange;
+}
+.content .wrap .main_box {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.content .wrap .main_box article {
+  width: 100%;
+}
+.content .wrap .main_box article .inner {
+  margin-top: 15px;
+}
+.content .wrap .main_box article .inner .sub_tab {
+  display: block;
+  width: 1180px;
+  height: 40px;
+  margin: 0 auto;
+}
+.content .wrap .main_box article .inner .sub_tab ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.content .wrap .main_box article .inner .sub_tab ul li {
+  width: 1180px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .wrap .main_box article .inner .sub_tab ul li a {
+  color: #000;
+  font: 500 13px "IBM Plex Sans KR";
+}
+.content .wrap .main_box article .inner .sub_tab ul li:hover a {
+  color: orange;
+}
+.content .wrap .main_box article .inner .sub_box {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+}
+.content .wrap .main_box article .inner .sub_box article {
+  width: 100%;
+  position: relative;
+}
+.content .wrap .main_box article .inner .sub_box article .inner {
+  width: 100%;
+}
+
+#footer_sub {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 140px;
+  background-color: rgb(65, 65, 65);
+}
+#footer_sub .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+#footer_sub .inner .footer_menu ul {
+  float: right;
+  margin-right: 210px;
+}
+#footer_sub .inner .footer_menu ul li {
+  float: left;
+  padding-right: 30px;
+  display: flex;
+}
+#footer_sub .inner .footer_menu ul li a {
+  font: bold 14px/1 "IBM Plex Sans KR";
+  color: #fff;
+}
+#footer_sub .inner .footer_wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#footer_sub .inner .footer_wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer_sub .inner .footer_wrap h2 {
+  margin: 30px 100px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#footer_sub .inner .footer_wrap address {
+  text-align: right;
+  position: relative;
+  margin: -100px 250px 50px;
+  display: block;
+  float: right;
+}
+#footer_sub .inner .footer_wrap address > li span {
+  padding: 0px 0px 5px 20px;
+  display: inline-block;
+  font: normal 13px/1 "IBM Plex Sans KR";
+  vertical-align: top;
+  color: #d6d6d6;
+  text-align: left;
+}
+
+.Menu .inner {
+  width: 100%;
+}
+.Menu .wrap .main_box {
+  width: 1180px;
+}
+.Menu .wrap .main_tab {
+  width: 1180px;
+}
+.Menu .wrap .masicle {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+.Menu .wrap .masicle .masicleText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .masicle .masicleText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .masicle .masicleText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .masicle .masicleText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .masicle .masicleText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .masicle .masicleText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .masicle .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .masicle .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .masicle .wrap .container article {
+  border: none;
+}
+.Menu .wrap .masicle .wrap .container article .menuPic {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .masicle .wrap .container article .menuPic img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .masicle .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .masicle .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .doublepop .doublepopText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .doublepop .doublepopText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .doublepop .doublepopText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .doublepop .doublepopText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .doublepop .doublepopText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .doublepop .doublepopText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .doublepop .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Menu .wrap .doublepop .wrap .container {
+  height: 100%;
+  width: 280px;
+  margin-right: 20px;
+}
+.Menu .wrap .doublepop .wrap .container article .menuPic {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .doublepop .wrap .container article .menuPic img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .doublepop .wrap .container article .menuPic h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .doublepop .wrap .container article .menuPic p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .porkribs .porkribsText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .porkribs .porkribsText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .porkribs .porkribsText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .porkribs .porkribsText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .porkribs .porkribsText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .porkribs .porkribsText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+  background-color: #aaa;
+}
+.Menu .wrap .porkribs .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Menu .wrap .porkribs .wrap .container {
+  height: 100%;
+  width: 280px;
+  margin-right: 20px;
+}
+.Menu .wrap .porkribs .wrap .container article .menuPic {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .porkribs .wrap .container article .menuPic img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .porkribs .wrap .container article .menuPic h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .porkribs .wrap .container article .menuPic p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .roasting .roastingText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .roasting .roastingText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .roasting .roastingText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .roasting .roastingText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .roasting .roastingText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .roasting .roastingText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+  background-color: #aaa;
+}
+.Menu .wrap .roasting .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Menu .wrap .roasting .wrap .container {
+  height: 100%;
+  width: 280px;
+  margin-right: 20px;
+}
+.Menu .wrap .roasting .wrap .container article {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .roasting .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .roasting .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .roasting .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .diving .divingText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .diving .divingText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .diving .divingText .text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .diving .divingText .text h4 {
+  text-align: center;
+  margin-bottom: 40px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .diving .divingText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .diving .divingText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .diving .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .diving .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .diving .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .diving .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .diving .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .diving .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .potaking .potaText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .potaking .potaText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .potaking .potaText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .potaking .potaText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .potaking .potaText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .potaking .potaText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .potaking .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Menu .wrap .potaking .wrap .container {
+  height: 100%;
+  width: 280px;
+  margin-right: 20px;
+}
+.Menu .wrap .potaking .wrap .container article {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .potaking .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .potaking .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .potaking .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .halfset .halfsetText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .halfset .halfsetText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .halfset .halfsetText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .halfset .halfsetText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .halfset .halfsetText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .halfset .halfsetText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .halfset .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .halfset .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .halfset .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .halfset .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .halfset .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .halfset .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .goldking .goldText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .goldking .goldText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .goldking .goldText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .goldking .goldText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .goldking .goldText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .goldking .goldText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .goldking .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .goldking .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .goldking .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .goldking .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .goldking .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .goldking .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .curryqueen .curryText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .curryqueen .curryText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .curryqueen .curryText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .curryqueen .curryText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .curryqueen .curryText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .curryqueen .curryText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .curryqueen .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .curryqueen .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .curryqueen .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .curryqueen .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .curryqueen .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .curryqueen .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .redking .redText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .redking .redText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .redking .redText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .redking .redText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .redking .redText .text span {
+  padding: 0 5px 5px 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .redking .redText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .redking .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .redking .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .redking .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .redking .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .redking .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .redking .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .matchoking .matchoText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .matchoking .matchoText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .matchoking .matchoText .text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .matchoking .matchoText .text h4 {
+  text-align: center;
+  margin-bottom: 40px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .matchoking .matchoText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .matchoking .matchoText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .matchoking .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .matchoking .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .matchoking .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .matchoking .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .matchoking .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .matchoking .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .ppuringcle .ppuringcleText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .ppuringcle .ppuringcleText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .ppuringcle .ppuringcleText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "IBM Plex Sans KR";
+}
+.Menu .wrap .ppuringcle .ppuringcleText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "IBM Plex Sans KR";
+}
+.Menu .wrap .ppuringcle .ppuringcleText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "IBM Plex Sans KR";
+  display: block;
+}
+.Menu .wrap .ppuringcle .ppuringcleText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .ppuringcle .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .ppuringcle .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .ppuringcle .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .ppuringcle .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .ppuringcle .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .ppuringcle .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .fried .friedText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .fried .friedText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .fried .friedText .text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .fried .friedText .text h4 {
+  text-align: center;
+  margin-bottom: 40px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .fried .friedText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .fried .friedText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .fried .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Menu .wrap .fried .wrap .container {
+  width: 280px;
+}
+.Menu .wrap .fried .wrap .container article {
+  border: none;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .fried .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .fried .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .fried .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+.Menu .wrap .seasoning .seasoningText {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 222, 197);
+}
+.Menu .wrap .seasoning .seasoningText .text {
+  width: 50%;
+  height: 85%;
+  position: relative;
+}
+.Menu .wrap .seasoning .seasoningText .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 70px/2 "LotteMartdream";
+}
+.Menu .wrap .seasoning .seasoningText .text h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font: normal 20px/2 "LotteMartdream";
+}
+.Menu .wrap .seasoning .seasoningText .text span {
+  padding: 5px;
+  margin-left: 30px;
+  font: normal 15px/1.5 "LotteMartdream";
+  display: block;
+}
+.Menu .wrap .seasoning .seasoningText .img {
+  width: 500px;
+  height: 85%;
+  display: flex;
+}
+.Menu .wrap .seasoning .wrap {
+  width: 1180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Menu .wrap .seasoning .wrap .container {
+  height: 100%;
+  width: 280px;
+  margin-right: 20px;
+}
+.Menu .wrap .seasoning .wrap .container article {
+  height: 200px;
+  background-color: #fff;
+  margin: 50px 0 10px 0;
+}
+.Menu .wrap .seasoning .wrap .container article img {
+  width: 100%;
+  object-fit: cover;
+}
+.Menu .wrap .seasoning .wrap .container article h2 {
+  color: #000;
+  margin: 10px 0 0 5px;
+  float: left;
+}
+.Menu .wrap .seasoning .wrap .container article p {
+  color: #000;
+  margin: 20px 0 0 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.BHCintroduce .history {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+}
+.BHCintroduce .history .inner {
+  width: 1180px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.BHCintroduce .history .inner .center_line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #000;
+}
+.BHCintroduce .history .inner .center_line .scroll-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  color: #ff7979;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.15), 0 3px 0 4px rgba(0, 0, 0, 0.15);
+  /* 먼저 바깥 영영으로 흰색의 선을 부여합니다
+  안쪽에 한번 더 그림자를 부여하고, 바깥쪽에 마지막으로 그림자를 더 부여
+  x축 / y축 / 블러 / 퍼지는효과 / 색
+  =>보통은 바깥으로 퍼지는것이 그림자 효과이지만
+  inset을 설정하면 안쪽으로 퍼지는 그림자가능하다
+  */
+}
+.BHCintroduce .history .inner .center_line .text {
+  display: flex;
+}
+.BHCintroduce .history .inner .center_line .text section {
+  background-color: #eee;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.BHCintroduce .history .inner .center_line .text section::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ff7979;
+  position: absolute;
+  top: 28px;
+  transform: rotate(45deg);
+}
+.BHCintroduce .history .inner .center_line .text section .icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 40px;
+  color: #ff7979;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.15), 0 3px 0 4px rgba(0, 0, 0, 0.15);
+}
+.BHCintroduce .history .inner .center_line .text section .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BHCintroduce .history .inner .center_line .text section .details .title {
+  font: 600 22px/1 "arial";
+}
+.BHCintroduce .history .inner .center_line .text section .details span:nth-of-type(2) {
+  font: 16px/1 "arial";
+  color: #333;
+}
+.BHCintroduce .history .inner .center_line .text section p {
+  margin: 10px 0px 17px 0px;
+  font: 18px/1.2 "arial";
+  color: #111;
+}
+.BHCintroduce .history .inner .center_line .text section .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BHCintroduce .history .inner .center_line .text section .bottom a {
+  display: block;
+  background-color: #ff7979;
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: #fff;
+  font: 20px/1 "arial";
+}
+.BHCintroduce .history .inner .center_line .text section .bottom i {
+  font-size: 16px;
+  color: #000;
+}
+.BHCintroduce .history .inner .center_line .text-1 {
+  justify-content: flex-start;
+}
+.BHCintroduce .history .inner .center_line .text-1 section .icon {
+  top: 15px;
+  right: -60px;
+}
+.BHCintroduce .history .inner .center_line .text-1 section::before {
+  right: -7px;
+  z-index: -1;
+}
+.BHCintroduce .history .inner .center_line .text-2 {
+  justify-content: flex-end;
+}
+.BHCintroduce .history .inner .center_line .text-2 section .icon {
+  top: 15px;
+  left: -60px;
+}
+.BHCintroduce .history .inner .center_line .text-2 section::before {
+  left: -7px;
+  z-index: -1;
+}
+
+.store .main_box article {
+  margin: 100px auto;
+}
+.store .main_box article .inner {
+  display: block;
+  width: 1180px;
+  height: 100%;
+  margin: 100px auto;
+}
+.store .main_box article .inner .comment img {
+  width: 1180px;
+  height: 100%;
+}
+.store .main_box article .inner .Eorder {
+  width: 1180px;
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.store .main_box article .inner .Eorder .wrap {
+  width: 280px;
+}
+.store .main_box article .inner .Eorder .wrap .container article {
+  border: none;
+}
+.store .main_box article .inner .Eorder .wrap .container article a img {
+  width: 280px;
+  margin: 50px 0 10px 0;
+}
+.store .main_box article .inner .Eorder .wrap .container article a span {
+  display: block;
+  color: #000;
+  margin: 10px 0 0 5px;
+  text-align: center;
+}
+.store .main_box article > div {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+.store .main_box article > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.Ecupon .main_tab {
+  overflow: hidden;
+  width: 100%;
+}
+.Ecupon .main_tab ul {
+  display: block;
+}
+.Ecupon .main_box {
+  overflow: hidden;
+}
+.Ecupon .main_box article .inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.Ecupon .main_box article .inner .comment {
+  width: 1180px;
+  height: 100%;
+  margin: 100px auto;
+}
+.Ecupon .main_box article .inner .comment i {
+  color: rgb(233, 190, 48);
+  font-size: 100px;
+}
+.Ecupon .main_box article .inner .comment h2 {
+  color: orangered;
+  font: bold 40px/2 "IBM Plex Sans KR";
+  margin-bottom: 30px;
+}
+.Ecupon .main_box article .inner .comment h3 {
+  font: normal 25px/1.2 "IBM Plex Sans KR";
+  margin-bottom: 30px;
+}
+.Ecupon .main_box article .inner .comment span {
+  display: block;
+  font: normal 20px/1.5 "IBM Plex Sans KR";
+  margin-bottom: 30px;
+}
+.Ecupon .main_box article .inner .comment ul li {
+  font: normal 15px/1.5 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .purchase {
+  width: 1180px;
+  height: 100%;
+  margin: 100px auto;
+  border-top: 1px solid #616161;
+}
+.Ecupon .main_box article .purchase h2 {
+  display: block;
+  font: bold 30px/4 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .purchase .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Ecupon .main_box article .purchase .inner img {
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+}
+.Ecupon .main_box article .Lpurchase {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #616161;
+}
+.Ecupon .main_box article .Lpurchase h2 {
+  font: bold 30px/4 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .Lpurchase .inner {
+  align-items: center;
+  display: flex;
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap img {
+  width: 400px;
+  display: block;
+  margin-bottom: 20px;
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap span {
+  font: normal 20px/1.5 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap p {
+  font: bold 25px/1.5 "IBM Plex Sans KR";
+  margin-bottom: 25px;
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap ul span {
+  font: bold 25px/1.5 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap ul li {
+  font: normal 20px/1.5 "IBM Plex Sans KR";
+}
+.Ecupon .main_box article .Lpurchase .inner .wrap ul li a {
+  color: #000;
+  text-decoration: underline;
+}
+.Ecupon .main_box article .userguide {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+.Ecupon .main_box article .userguide h2 {
+  font: bold 40px/2 "IBM Plex Sans KR";
+  margin-bottom: 30px;
+}
+.Ecupon .main_box article .userguide .exchange,
+.Ecupon .main_box article .userguide .amount {
+  margin-top: 100px;
+}
+.Ecupon .main_box article .userguide .exchange h3,
+.Ecupon .main_box article .userguide .amount h3 {
+  border-top: 3px solid #000;
+  font: bold 40px/2 "IBM Plex Sans KR";
+  margin-bottom: 30px;
+  color: orangered;
+}
+.Ecupon .main_box article .userguide .exchange ul,
+.Ecupon .main_box article .userguide .amount ul {
+  margin-top: 70px;
+}
+.Ecupon .main_box article .userguide .exchange ul h4,
+.Ecupon .main_box article .userguide .amount ul h4 {
+  font: bolder 25px/1.2 "IBM Plex Sans KR";
+  margin-bottom: 20px;
+  color: rgb(153, 99, 0);
+}
+.Ecupon .main_box article .userguide .exchange ul li,
+.Ecupon .main_box article .userguide .amount ul li {
+  margin-left: 30px;
+  text-indent: -30px;
+  display: block;
+  font: normal 20px/1.5 "IBM Plex Sans KR";
+  padding: 3px;
+}
+.Ecupon .main_box article .userguide .exchange ul li a,
+.Ecupon .main_box article .userguide .amount ul li a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.Startups .main_box {
+  width: 100%;
+  height: 100%;
+}
+.Startups .main_box > article {
+  padding-bottom: 150px;
+}
+.Startups .main_box > article .title {
+  padding: 30px 30px 0 50px;
+}
+.Startups .main_box > article .title h2 {
+  font: 700 30px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide {
+  width: 1180px;
+  height: 1200px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .above h3 {
+  font: 700 60px/2 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .above span {
+  font: 400 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .above strong {
+  margin-top: 20px;
+  display: block;
+  font: 700 23px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .reason {
+  width: 50%;
+  float: left;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .reason ul h4 {
+  margin-top: 70px;
+  font: 700 25px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .reason ul li {
+  font: 300 20px/1.7 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .Proof {
+  width: 50%;
+  float: right;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .Proof h4 {
+  margin-top: 70px;
+  font: 700 25px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .Proof span {
+  font: 300 20px/1.7 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .why .under .Proof img {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .development {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .development h3 {
+  font: 700 60px/1.7 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .development ul h4 {
+  margin-top: 50px;
+  font: 700 25px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .development ul li {
+  font: 300 20px/1.7 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .support {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .support h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .support h4 {
+  font: 700 25px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .support ul h5 {
+  margin-top: 50px;
+  font: 700 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .support ul li {
+  font: 300 20px/1.7 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount h4 {
+  font: 700 30px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount .text ul h5 {
+  margin-top: 50px;
+  font: 700 25px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount .text ul li {
+  font: 300 20px/1.7 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount .text ul table {
+  border: 1px solid black;
+  border-spacing: 60px 10px;
+  border-collapse: separate;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount .text ul table th {
+  text-align: left;
+  font: 400 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .amount .text ul table tr td {
+  font: 300 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport ul {
+  margin-top: 50px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport ul li {
+  margin-top: 70px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport ul li h4 {
+  font: 700 30px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport ul li span {
+  font: 300 25px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .sartup_suport ul li img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .concept {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .concept h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .concept ul {
+  margin: 70px 0 0 50px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .concept ul li {
+  list-style: circle;
+  font: 300 40px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .procedure {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .procedure h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .procedure img {
+  width: 100%;
+  height: 100%;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule h4 {
+  font: 700 30px/3 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule h5 {
+  font: 700 25px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule ul {
+  margin-left: 20px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule ul li {
+  list-style: circle;
+  font: 300 15px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under h4 {
+  margin-bottom: -20px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under ul h6 {
+  margin-top: 20px;
+  font: 400 15px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under ul li {
+  list-style: none;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area1 {
+  width: 50%;
+  float: left;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 {
+  margin-top: 30px;
+  width: 50%;
+  float: right;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 i {
+  font-size: 30px;
+  display: inline;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 p {
+  display: inline;
+  font: 400 20px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 span {
+  font: 400 15px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 ul li {
+  font: 400 15px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .under .area2 .bus {
+  margin-top: 20px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .above h3 {
+  font: 700 60px/2 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .above span {
+  font: 400 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .schedule .map .inner .above strong {
+  margin-top: 20px;
+  display: block;
+  font: 700 23px/1.5 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset {
+  border: none;
+  width: 750px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset ul {
+  margin: 30px 30px 0 30px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset ul li {
+  font: 400 20px/2 "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset .checkbox {
+  width: 50%;
+  margin-left: 30px;
+  float: left;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset .checkbox h5 {
+  margin-top: 15px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .inquiry form fieldset button {
+  width: 100px;
+  height: 30px;
+  margin: 20px 10px 0 0;
+  border-radius: 20px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  float: right;
+  font: 300 15px "lottemartdream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq {
+  width: 1180px;
+  height: 100%;
+  margin: 30px auto 120px auto;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq h3 {
+  font: 700 60px/1.5 "LotteMartDream";
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab {
+  position: relative;
+  background-color: #fff;
+  padding: 0px 20px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio] {
+  appearance: none;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio]:checked + label::after {
+  color: #fff;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio]:checked ~ .content {
+  max-height: 100vh;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio]:checked ~ .content p {
+  color: #fff;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio]:checked ~ label h2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 100px;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: all 0.2s;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab input[type=radio]:checked ~ label h3 {
+  background-color: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab label h2 {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.Startups .main_box > article .swiper-wrapper .swiper-slide .faq .tab .content p {
+  position: relative;
+  padding: 15px 0;
+  color: #333;
+  z-index: 10;
+}
+.Startups .main_box > article:nth-of-type(1) {
+  background-color: pink;
+}
+.Startups .main_box > article:nth-of-type(2) {
+  background-color: blanchedalmond;
+}
+.Startups .main_box > article:nth-of-type(3) {
+  background-color: skyblue;
+}
+.Startups .main_box > article:nth-of-type(4) {
+  background-color: #aaa;
+}
+
+/*# sourceMappingURL=style.css.map */

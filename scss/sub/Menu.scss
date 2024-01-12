@@ -1,0 +1,1007 @@
+.Menu {
+	.inner {
+		width: 100%;
+	}
+	.wrap {
+		.main_box {
+			width: 1180px;
+		}
+		.main_tab {
+			width: 1180px;
+		}
+		.masicle {
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
+			.masicleText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #fff;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						.menuPic {
+							height: 200px;
+							background-color: #fff;
+							margin: 50px 0 10px 0;
+							img {
+								width: 100%;
+								object-fit: cover;
+							}
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.doublepop {
+			.doublepopText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.container {
+					height: 100%;
+					width: 280px;
+					margin-right: 20px;
+					article {
+						//border: 1px solid #000;
+						.menuPic {
+							height: 200px;
+							background-color: #fff;
+							margin: 50px 0 10px 0;
+							img {
+								width: 100%;
+								object-fit: cover;
+							}
+							h2 {
+								color: #000;
+								margin: 10px 0 0 5px;
+								float: left;
+							}
+							p {
+								color: #000;
+								margin: 20px 0 0 5px;
+								margin-bottom: 30px;
+								float: right;
+							}
+						}
+					}
+				}
+			}
+		}
+		.porkribs {
+			.porkribsText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.container {
+					height: 100%;
+					width: 280px;
+					margin-right: 20px;
+					article {
+						//border: 1px solid #000;
+						.menuPic {
+							height: 200px;
+							background-color: #fff;
+							margin: 50px 0 10px 0;
+							img {
+								width: 100%;
+								object-fit: cover;
+							}
+							h2 {
+								color: #000;
+								margin: 10px 0 0 5px;
+								float: left;
+							}
+							p {
+								color: #000;
+								margin: 20px 0 0 5px;
+								margin-bottom: 30px;
+								float: right;
+							}
+						}
+					}
+				}
+			}
+		}
+		.roasting {
+			.roastingText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.container {
+					height: 100%;
+					width: 280px;
+					margin-right: 20px;
+					article {
+						//border: 1px solid #000;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.diving {
+			.divingText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 20px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 40px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.potaking {
+			.potaText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.container {
+					height: 100%;
+					width: 280px;
+					margin-right: 20px;
+					article {
+						//border: 1px solid #000;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.halfset {
+			.halfsetText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.goldking {
+			.goldText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.curryqueen {
+			.curryText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.redking {
+			.redText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 0 5px 5px 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.matchoking {
+			.matchoText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 20px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 40px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.ppuringcle {
+			.ppuringcleText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'IBM Plex Sans KR';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'IBM Plex Sans KR';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'IBM Plex Sans KR';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.fried {
+			.friedText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 20px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 40px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.container {
+					//height: 100%;
+					width: 280px;
+					article {
+						border: none;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.seasoning {
+			.seasoningText {
+				width: 100%;
+				height: 500px;
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(246, 222, 197);
+				.text {
+					width: 50%;
+					height: 85%;
+					position: relative;
+					h2 {
+						text-align: center;
+						margin-bottom: 30px;
+						font: normal 70px/2 'LotteMartdream';
+					}
+					h4 {
+						text-align: center;
+						margin-bottom: 60px;
+						font: normal 20px/2 'LotteMartdream';
+					}
+					span {
+						padding: 5px;
+						margin-left: 30px;
+						font: normal 15px/1.5 'LotteMartdream';
+						display: block;
+					}
+				}
+				.img {
+					width: 500px;
+					height: 85%;
+					display: flex;
+					//background-color: #aaa;
+				}
+			}
+			.wrap {
+				width: 1180px;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.container {
+					height: 100%;
+					width: 280px;
+					margin-right: 20px;
+					article {
+						//border: 1px solid #000;
+						height: 200px;
+						background-color: #fff;
+						margin: 50px 0 10px 0;
+						img {
+							width: 100%;
+							object-fit: cover;
+						}
+						h2 {
+							color: #000;
+							margin: 10px 0 0 5px;
+							float: left;
+						}
+						p {
+							color: #000;
+							margin: 20px 0 0 5px;
+							margin-bottom: 30px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}

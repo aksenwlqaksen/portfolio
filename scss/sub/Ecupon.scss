@@ -1,0 +1,150 @@
+.Ecupon {
+	.main_tab {
+		position: relative;
+		width: 100%;
+		ul {
+			overflow: hidden;
+			display: block;
+		}
+	}
+	.main_box {
+		overflow: hidden;
+		article {
+			.inner {
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				.comment {
+					width: 1180px;
+					height: 100%;
+					margin: 100px auto;
+					i {
+						color: rgb(233, 190, 48);
+						font-size: 100px;
+					}
+					h2 {
+						color: orangered;
+						font: bold 40px/2 'IBM Plex Sans KR';
+						margin-bottom: 30px;
+					}
+					h3 {
+						font: normal 25px/1.2 'IBM Plex Sans KR';
+						margin-bottom: 30px;
+					}
+					span {
+						display: block;
+						font: normal 20px/1.5 'IBM Plex Sans KR';
+						margin-bottom: 30px;
+					}
+					ul {
+						li {
+							font: normal 15px/1.5 'IBM Plex Sans KR';
+						}
+					}
+				}
+			}
+			.purchase {
+				//margin-top: 100px;
+				width: 1180px;
+				height: 100%;
+				margin: 100px auto;
+				border-top: 1px solid #616161;
+				h2 {
+					display: block;
+					font: bold 30px/4 'IBM Plex Sans KR';
+				}
+				.inner {
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					img {
+						align-items: center;
+						width: 280px;
+						margin: 0 auto;
+					}
+				}
+			}
+			.Lpurchase {
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				border-top: 1px solid #616161;
+				h2 {
+					font: bold 30px/4 'IBM Plex Sans KR';
+				}
+				.inner {
+					align-items: center;
+					display: flex;
+					.wrap {
+						img {
+							width: 400px;
+							display: block;
+							margin-bottom: 20px;
+						}
+						span {
+							font: normal 20px/1.5 'IBM Plex Sans KR';
+						}
+						p {
+							font: bold 25px/1.5 'IBM Plex Sans KR';
+							margin-bottom: 25px;
+						}
+						ul {
+							span {
+								font: bold 25px/1.5 'IBM Plex Sans KR';
+							}
+							li {
+								font: normal 20px/1.5 'IBM Plex Sans KR';
+								a {
+									color: #000;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+			}
+			.userguide {
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+
+				h2 {
+					font: bold 40px/2 'IBM Plex Sans KR';
+					margin-bottom: 30px;
+				}
+				.exchange,
+				.amount {
+					margin-top: 100px;
+					h3 {
+						border-top: 3px solid #000;
+						font: bold 40px/2 'IBM Plex Sans KR';
+						margin-bottom: 30px;
+						color: orangered;
+					}
+					ul {
+						margin-top: 70px;
+
+						h4 {
+							//border-top: 1px solid #aaa;
+							font: bolder 25px/1.2 'IBM Plex Sans KR';
+							margin-bottom: 20px;
+							color: rgb(153, 99, 0);
+						}
+						li {
+							margin-left: 30px;
+							text-indent: -30px;
+							display: block;
+							font: normal 20px/1.5 'IBM Plex Sans KR';
+							padding: 3px;
+							a {
+								color: #000;
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
